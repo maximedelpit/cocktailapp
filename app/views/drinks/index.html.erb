@@ -1,0 +1,7 @@
+<ul>
+  <% @drinks.each do |i| %>
+    <li><%= link_to i.name, drink_path(i) %></li>
+  <% end %>
+</ul>
+
+<%= link_to "CREATE NEW DRINK", new_drink_path %>
